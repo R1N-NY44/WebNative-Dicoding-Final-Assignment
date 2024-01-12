@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    height: 100vh; /* 100% tinggi viewport */
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -13,6 +13,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .logo {
@@ -56,6 +59,85 @@ footer {
     align-items: center;
 }
 
+header .logo{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.profile-picture{
+    margin: 0 auto;
+    display: block;
+    width: 20%;
+    border-radius: 5%;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    font-size: 1.2em;
+}
+
+.abboutMeText{
+    font-size: 1.2em;
+    text-align: justify;
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 80%;
+}
+
+.mini-article{
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 80%;
+    display: flex;
+}
+
+.mini-article img{
+    width: 30%;
+}
+
+.mini-article p, h1{
+    width: 70%;
+    margin-left: 5%;
+}
+
+.aside-conmponen{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+aside img{
+    border-radius: 5%;
+}
+
+aside li {
+    font-size: 1.2em;
+    text-align: justify;
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 80%;
+}
+
+.title1{
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 2%;
+}
+
+.quotes {
+    font-style: italic;
+    font-size: 1.2em;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
 .social-icons {
     display: flex;
     gap: 4px;
@@ -63,8 +145,26 @@ footer {
 
 .social-icons a {
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 .github-icon {
-    content: url('https://api.iconify.design/mdi/github.svg?width=60&height=60');
+    width: 60px;
+    height: 60px;
+    content: url('https://api.iconify.design/mdi/github.svg?color=white&width=60&height=60');
+}
+
+.github-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+footer p{
+    font-size: 1.2em;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
