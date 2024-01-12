@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100vh; /* 100% tinggi viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    flex: 1; /* agar kontennya dapat memanfaatkan sisa tinggi */
+}
+
+article {
+    flex: 2;
+    padding: 20px;
+}
+
+aside {
+    flex: 1;
+    padding: 20px;
+    border-left: 2px solid #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 4px;
+}
+
+.social-icons a {
+    text-decoration: none;
+}
+
+.github-icon {
+    content: url('https://api.iconify.design/mdi/github.svg?width=60&height=60');
+}
